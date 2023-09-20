@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm - Book of Bunny</title>
+    <link rel="icon" href="../../img/logo.png" type="image/icon type">
+    <script src="https://kit.fontawesome.com/b1f83b8c89.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .detail{
+            min-height: 400px; padding: 40px 0 ;
+        }
+        .detail h1{
+            width: 90%; text-align: center; padding: 10px 0;
+        }
+        .detail2{
+            background-color: #dbdbdb; width: 80%; min-height: 300px; margin: 0 auto; padding: 40px ; 
+        }
+        .detail2 .img-box{
+            width: 30%; float: left;
+        }
+        .detail2 .img-box img{
+            width: 250px;
+        }
+        .detail2 .content-box{
+            width: 70%; float: left;
+        }
+        .detail2 .content-box .title{
+            font-size: 1.5rem; font-weight: bolder;
+        }
+        .detail2 .content-box .price{
+            font-size: 1.5rem; font-weight: bolder;
+        }
+        .detail2 .content-box .price p{
+            margin: 5px 0;
+        }
+        .detail2 .content-box .description p{
+            min-height: 80px;
+        }
+        .detail2 .content-box .stock{
+            display: flex; align-items: center;
+        }
+        .detail2 .content-box .stock p{
+            margin: 10px;
+        }
+        .detail2 .content-box .amount{
+            display: flex; align-items: center;
+        }
+        .detail2 .content-box .amount input{
+            margin: 10px;padding: 10px; width: 50px ; text-align: center;
+        }
+        .detail2 .content-box .btn-buy button{
+            padding: 5px 20px; font-size: 1.2rem; margin: 5px 10px; background-color: black; color: whitesmoke; cursor: pointer;
+        }
+        .related{
+            width: 80%; margin: 0 auto 50px;
+        }
+        .related h3{
+            margin: 20px 0; font-size: 1.4rem;
+        }
+        .related2{
+            display: flex; align-items: center; justify-content: space-evenly;
+        }
+        .related2-sub2{
+            margin: 5px 0;
+        }
+        .related2-sub2 img{
+            width: 150px
+        }
+        .related2-sub2 p{
+            font-weight: bolder; margin: 5px 0;
+        }
+        .related2-sub .sub2 p{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="sidebar">
+        
+        <div class="sidebar-content">
+            <div id="logo">
+                <a href="">
+                    <img src="../../img/logo.png" alt="">
+                </a>
+            </div>
+
+            <div id="extra">
+                <button onclick="openLogin()"><i class="far fa-user-circle"></i></button>
+                <button href=""><i class="fas fa-search"></i></button>
+                <button href=""><i class="far fa-heart"></i></button>
+                <button href=""><i class="fas fa-shopping-cart"></i></button>
+            </div> 
+            <div id="modal">
+                <div class="modal-content">
+
+                    <!-- form login/đăng nhập -->
+                     <div id="modal-login" class="modal-log">
+                         <form action="#">
+                             <div class="header-form">
+                                <h1>Đăng Nhập</h1>
+                                <button class="close" onclick="closeLogin()">&times;</button>
+                             </div>
+
+                            <input type="text" name="username" class="username" placeholder="Tài khoản" required/>
+                            <input type="password" name="password" class="password" placeholder="Mật Khẩu" required/>
+
+                            <button>Đăng Nhập</button>
+                            <button>Quên Mật Khẩu</button>
+                            <p>
+                                Chưa có tài khoản ? 
+                                <button class="btn-register" onclick="openRegister()">Đăng ký ngay</button>
+                            </p>
+                         </form>
+                     </div>
+
+                     <!-- form register/đăng ký -->
+                     <div id="modal-register" class="modal-log">
+                        <form action="#">
+                            <div class="header-form">
+                                <h1>Đăng Ký</h1>
+                                <button class="close" onclick="closeRegister()">&times;</button>
+                             </div>
+
+                            <input type="text" name="username" class="username" placeholder="Họ Tên" required/>
+                            <input type="email" name="email" class="email" placeholder="Email" required />
+                            <input type="password" name="password" class="password" placeholder="Mật Khẩu" required />
+                            <input type="password" name="re-password" class="re-password" placeholder="Xác Nhận Mật Khẩu" required/>
+
+                            <button>Đăng Ký</button>
+                            <p>
+                                Đã có tài khoản !
+                                <button class="btn-login" onclick="openLogin()">Đăng Nhập Ngay</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+             </div>
+           
+             <div class="" id="overlay" ></div>
+            <div id="menu-link">
+                <h3>Thể Loại Sách</h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../best-seller/best-seller.html">Best Seller</a>
+                        </li>
+                        <li>
+                            <a href="../textbook/textbook.html">Giáo Khoa Giáo Trình</a>
+                        </li>
+                        <li>
+                            <a href="../hornor/hornor.html">Kinh Dị</a>
+                        </li>
+                        <li>
+                            <a href="../history/history.html">Lịch Sử</a>
+                        </li>
+                        <li>
+                            <a href="../economy/economy.html">Kinh Tế</a>
+                        </li>
+                        <li>
+                            <a href="../life-skill/life-skill.html">Kỹ Năng Sống</a>
+                        </li>
+                        <li>
+                            <a href="../comic/comic.html">Truyện Tranh Manga</a>
+                        </li>
+                        <li>
+                            <a href="../children/children.html">Thiếu Nhi</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="sidebar-footer">
+            
+            <div class="follow">
+                <a target="blank" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a target="blank" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                <a target="blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a target="blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                <p>
+                    Copyright © All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="slideshow">
+            <img src="../../img/background5.png" alt="">
+        </div>
+        <div class="detail"  class="">
+            <h1>Chi Tiết Sản Phẩm</h1>
+            <div class="detail2" >
+                <div class="img-box" >
+                    <img  src="https://static.ielts-fighter.com/uploads/2020/12/06/ielts-speaking-samplea-topic-book-1.jpg" alt="">
+                </div>
+                <div class="content-box" >
+                    <div class="title">
+                        <p>Lorem Lorem Lorem Lorem Lorem</p>
+                    </div>
+                    <div class="price" >
+                        <p >199.000 đ</p>
+                    </div>
+                    <div class="description">
+                        <h3>Mô tả ngắn: </h3>
+                        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, corporis quasi error ipsa cupiditate sapiente earum, totam distinctio repellat ea a id maxime? Quibusdam nisi numquam exercitationem earum, vel iste impedit fugit temporibus magnam non mollitia quia reiciendis molestias ut eaque fuga architecto vitae consectetur, inventore quam.</p>
+                    </div>
+                    <div class="stock" >
+                        <h3>Còn lại: </h3>
+                        <p style="margin: 10px;">20 Sản phẩm</p>
+                    </div>
+                    <div class="amount" >
+                        <h3>Số lượng: </h3>
+                        <input type="number" value="1">
+                    </div>
+                    <div class="btn-buy" >
+                        <button >Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="related" >
+            <h3 >Liên quan</h3>
+            <div class="related2">
+                <div class="related2-sub">
+                    <div class="related2-sub2" >
+                        <a href="#">
+                            <img src="https://static.ielts-fighter.com/uploads/2020/12/06/ielts-speaking-samplea-topic-book-1.jpg" alt="related">
+                        </a>
+                    </div>
+                    <div class="sub2">
+                        <p >Lorem lorem lorem</p>
+                    </div>
+                </div>
+                <div class="related2-sub">
+                    <div class="related2-sub2" >
+                        <a href="#">
+                            <img src="https://static.ielts-fighter.com/uploads/2020/12/06/ielts-speaking-samplea-topic-book-1.jpg" alt="related">
+                        </a>
+                    </div>
+                    <div class="sub2">
+                        <p >Lorem lorem lorem</p>
+                    </div>
+                </div>
+                <div class="related2-sub">
+                    <div class="related2-sub2" >
+                        <a href="#">
+                            <img src="https://static.ielts-fighter.com/uploads/2020/12/06/ielts-speaking-samplea-topic-book-1.jpg" alt="related">
+                        </a>
+                    </div>
+                    <div class="sub2">
+                        <p >Lorem lorem lorem</p>
+                    </div>
+                </div>
+                <div class="related2-sub">
+                    <div class="related2-sub2" >
+                        <a href="#">
+                            <img src="https://static.ielts-fighter.com/uploads/2020/12/06/ielts-speaking-samplea-topic-book-1.jpg" alt="related">
+                        </a>
+                    </div>
+                    <div class="sub2">
+                        <p >Lorem lorem lorem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="top">
+            <div class="top-about">
+                <div class="title-top">Thông Tin</div><br>
+                <a href="../../personal/infomation/gioi-thieu.html">Giới thiệu</a><br>
+                <a href="../../personal/infomation/doi-tac.html">Đối tác</a></div>
+            <div class="top-about">
+                <div class="title-top">Chính sách</div><br>
+                <a href="../../personal/policy/doi-hang.html">Chính sách đổi hàng</a><br>
+                <a href="../../personal/policy/bao-mat.html">Chính sách bảo mật</a><br>
+            </div>
+            <div class="top-about">
+                <div class="title-top">FAQ</div><br>
+                <a href="../../personal/fqa/tt-vc.html">Thanh toán và vận chuyển</a><br>
+                <a href="../../personal/fqa/check-booking.html">Kiểm tra thông tin đơn hàng</a><br>
+                <a href="../../personal/fqa/question.html">Câu hỏi thường gặp</a></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-about">
+                <p class="content" >Nhận khuyến mãi từ tụi mình.</p>
+                <form class="form1" action="">
+                    <input type="text" placeholder="Nhập địa chỉ email của bạn" >
+                    <input type="submit" value="Gửi">
+                </form>
+            </div>
+            <div class="bottom-about">
+                <p class="content" >Tra cứu đơn hàng của bạn</p>
+                <form class="form1" action="">
+                    <input type="text" placeholder="Nhập SĐT hoặc Mã đơn hàng" >
+                    <input type="submit" value="Gửi">
+                </form>
+            </div>
+            <div class="bottom-about">
+                <a target="blank" href="https://gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    <p class="support" >
+                        GÓP Ý/ THAN PHIỀN
+                    </p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/showmenu.js"></script>
+    <script src="./js/hover-item.js">    </script>
+</body>
+
+</html>

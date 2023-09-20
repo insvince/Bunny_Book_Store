@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỹ Năng Sống - Thỏ Store</title>
+    <link rel="icon" href="../../img/logo.png" type="image/icon type">
+    <script src="https://kit.fontawesome.com/b1f83b8c89.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/primary.css">
+    <style>
+        #container{
+            width: 96%;
+            margin: 0 auto;
+        }
+        .page-number .disable{
+            cursor: default;
+            pointer-events: none;
+        }
+        .page-number .active{
+            background-color: aqua;
+            border-radius: 10px;
+        }
+        .button-menu{
+            opacity: 0;
+        }
+        .button-menu.active{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sidebar">
+        <div class="sidebar-content">
+            <div id="logo">
+                <a href="../../index.html">
+                    <img src="../../img/logo.png" alt="">
+                </a>
+            </div>
+
+            <!-- icon personal -->
+            <div id="extra">
+                <a href=""><i class="far fa-user-circle"></i></a>
+                <a href=""><i class="fas fa-search"></i></a>
+                <a href=""><i class="far fa-heart"></i></a>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div id="menu-link">
+                <h3>Thể Loại Sách</h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="active" href="../life-skill/life-skill.html">Kỹ Năng Sống</a>
+                        </li>
+                        <li>
+                            <a href="../best-seller/best-seller.html">Best Seller</a>
+                        </li>
+                        <li>
+                            <a href="../textbook/textbook.html">Giáo Khoa Giáo Trình</a>
+                        </li>
+                        <li>
+                            <a href="../hornor/hornor.html">Kinh Dị</a>
+                        </li>
+                        <li>
+                            <a href="../history/history.html">Lịch Sử</a>
+                        </li>
+                        <li>
+                            <a href="../economy/economy.html">Kinh Tế</a>
+                        </li>
+                        <li>
+                            <a href="../comic/comic.html">Truyện Tranh Manga</a>
+                        </li>
+                        <li>
+                            <a href="../children/children.html">Thiếu Nhi</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="sidebar-footer">
+            
+            <div class="follow">
+                <a target="blank" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a target="blank" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                <a target="blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a target="blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                <p>
+                    Copyright © All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="slideshow">
+            <img src="../../img/background4.png" alt="">
+        </div>
+        <div class="book">
+            <div class="book-list">
+                <h2>Tiêu đề sách</h2>
+                <div class="item-row">
+                    <div class="item">
+                        <div class="item-select">
+                            <a href="../detail-product/index.html">
+                                <img src="../../img/book.jpg" alt="">
+                            </a>
+                            <div  class="button-menu"  id="button-menu">
+                                <button><i class="fas fa-cart-plus"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <p class="book-price">100.000 <u>đ</u></p>
+                        <p class="book-name">Sách</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-select">
+                            <a href="../detail-product/index.html">
+                                <img src="../../img/book.jpg" alt="">
+                            </a>
+                            <div  class="button-menu"  id="button-menu">
+                                <button><i class="fas fa-cart-plus"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <p class="book-price">100.000 <u>đ</u></p>
+                        <p class="book-name">Sách</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-select">
+                            <a href="../detail-product/index.html">
+                                <img src="../../img/book.jpg" alt="">
+                            </a>
+                            <div  class="button-menu"  id="button-menu">
+                                <button><i class="fas fa-cart-plus"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <p class="book-price">100.000 <u>đ</u></p>
+                        <p class="book-name">Sách</p>
+                    </div>
+                </div>
+                <div class="item-row">
+                    <div class="item">
+                        <div class="item-select">
+                            <a href="../detail-product/index.html">
+                                <img src="../../img/book.jpg" alt="">
+                            </a>
+                            <div  class="button-menu"  id="button-menu">
+                                <button><i class="fas fa-cart-plus"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <p class="book-price">100.000 <u>đ</u></p>
+                        <p class="book-name">Sách</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-select">
+                            <a href="../detail-product/index.html">
+                                <img src="../../img/book.jpg" alt="">
+                            </a>
+                            <div  class="button-menu"  id="button-menu">
+                                <button><i class="fas fa-cart-plus"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <p class="book-price">100.000 <u>đ</u></p>
+                        <p class="book-name">Sách</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-select">
+                            <a href="../detail-product/index.html">
+                                <img src="../../img/book.jpg" alt="">
+                            </a>
+                            <div  class="button-menu"  id="button-menu">
+                                <button><i class="fas fa-cart-plus"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <p class="book-price">100.000 <u>đ</u></p>
+                        <p class="book-name">Sách</p>
+                    </div>
+                </div>
+                <div class="item-row">
+                    <div class="item">
+                        <div class="item-select">
+                            <a href="../detail-product/index.html">
+                                <img src="../../img/book.jpg" alt="">
+                            </a>
+                            <div  class="button-menu"  id="button-menu">
+                                <button><i class="fas fa-cart-plus"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <p class="book-price">100.000 <u>đ</u></p>
+                        <p class="book-name">Sách</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-select">
+                            <a href="../detail-product/index.html">
+                                <img src="../../img/book.jpg" alt="">
+                            </a>
+                            <div  class="button-menu"  id="button-menu">
+                                <button><i class="fas fa-cart-plus"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <p class="book-price">100.000 <u>đ</u></p>
+                        <p class="book-name">Sách</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-select">
+                            <a href="../detail-product/index.html">
+                                <img src="../../img/book.jpg" alt="">
+                            </a>
+                            <div  class="button-menu"  id="button-menu">
+                                <button><i class="fas fa-cart-plus"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <p class="book-price">100.000 <u>đ</u></p>
+                        <p class="book-name">Sách</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="page-number">
+                <div class="number-box">
+                    <a href="./life-skill.html" ><i class="fas fa-arrow-left"></i></a>
+                    <a href="./life-skill.html" >1</a>
+                    <a href="" class="active disable">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href=""><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="top">
+            <div class="top-about">
+                <div class="title-top">Thông Tin</div><br>
+                <a href="../../personal/infomation/gioi-thieu.html">Giới thiệu</a><br>
+                <a href="../../personal/infomation/doi-tac.html">Đối tác</a>
+            </div>
+            <div class="top-about">
+                <div class="title-top">Chính sách</div><br>
+                <a href="../../personal/policy/doi-hang.html">Chính sách đổi hàng</a><br>
+                <a href="../../personal/policy/bao-hanh.html">Chính sách bảo hành</a><br>
+                <a href="../../personal/policy/bao-mat.html">Chính sách bảo mật</a><br>
+                <a href="../../personal/policy/hoan-tien.html">Chính sách hoàn tiền</a>
+            </div>
+            <div class="top-about">
+                <div class="title-top">FAQ</div><br>
+                <a href="../../personal/fqa/tt-vc.html">Thanh toán và vận chuyển</a><br>
+                <a href="../../personal/fqa/check-booking.html">Kiểm tra thông tin đơn hàng</a><br>
+                <a href="../../personal/fqa/question.html">Câu hỏi thường gặp</a>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="bottom-about">
+                <p class="content" >Nhận khuyến mãi từ tụi mình.</p>
+                <form class="form1" action="">
+                    <input type="text" placeholder="Nhập địa chỉ email của bạn" >
+                    <input type="submit" value="Gửi">
+                </form>
+            </div>
+            <div class="bottom-about">
+                <p class="content" >Tra cứu đơn hàng của bạn</p>
+                <form class="form1" action="">
+                    <input type="text" placeholder="Nhập SĐT hoặc Mã đơn hàng" >
+                    <input type="submit" value="Gửi">
+                </form>
+            </div>
+            <div class="bottom-about">
+                <a target="blank" href="https://gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    <p class="support" >
+                        GÓP Ý/ THAN PHIỀN
+                    </p>
+                </a>
+            </div>
+        </div>
+    </footer><script src="../../js/hover-item.js"></script>
+</body>
+</html>
